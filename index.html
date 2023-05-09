@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- Color Style switcher -->
+        <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Ren&eacute;e Lu</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user-circle nav__icon"></i>About                                
+                            </a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-brain nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Career
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-book-open nav__icon"></i>Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-comment-heart nav__icon"></i>Contact
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a download="" href="assets\pdf\Renee-Resume-23-05-01.pdf" target="_blank" class="nav__link-resume">
+                                <i class="uil uil-file nav__icon"></i>Resumé
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <i class="uil uil-times nav__close" id="nav-close"></i> -->
+                </div>
+
+                <!-- Theme change button  -->
+                <div class="nav__btns">
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                </div>
+
+                <!-- Theme color style button  -->
+                <div class="style-switcher">
+                    <div class="style-switcher-toggler s-icon">
+                        <i class="uil uil-palette"></i>
+                    </div>
+                    
+                    <h4>Theme Colours</h4>
+                    <div class="colors">
+                        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    </div>
+                </div>
+
+                <!-- Menu toggle bars -->
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/reneeylu" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+
+                            <a href="https://github.com/monomest" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+
+                        <!--==================== PROFILE PICTURE ====================-->
+                        <!--Copied and pasted content from img/blob.svg-->
+                        <!-- <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x='-25' y = '-30' xlink:href="https://i.guim.co.uk/img/media/ae4637c5bdca3e3c7f0f86a741f43ecbe897852e/0_132_3545_2127/master/3545.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=fa7442eb6602af03e57f71f33207e0c4"/>
+                                </g>
+                            </svg>
+                        </div> -->
+
+                        <!-- <div class="home__data">
+                            <h3 class="home__subtitle">Hello, my name is </h3>
+                            <h1 class="home__title">Ren&eacute;e Lu</h1>
+                            <h1 class="home__title">I empower humans through data</h1>
+                            <h3>I'm a Data Analyst</h3>
+                            <h3 class="home__subtitle">I'm a Data Analyst. I use data to </h3>
+                            <p class="home__description">I'm just a baby.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-comment-heart button__icon"></i>
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div class="home__data">
+                        <!-- Name blinker animation -->
+                        <!-- source: https://stackoverflow.com/questions/67070228/how-to-place-blinking-after-typewriter-effect-in-html-css-javascript -->
+                        <h1 id="myName" class="home__title">
+                            <span class="text_out"></span>
+                            <span class="blink_me">_</span>
+                        </h1>
+                        <h1 class="home__intro">I solve problems using <span class="highlight">data.</span></h1>
+                        <!-- Multiple colours for a href -->
+                        <!-- Source: https://stackoverflow.com/questions/46391125/multiple-a-href-with-different-colors -->
+                        <!-- Source: https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text -->
+                        <p class="home__description">
+                            <br>I'm a data analyst specialising in finding the answers to big business questions.
+                            Currently, I'm focused on solving problems in the retail space at 
+                            <span class="highlight"><a href="https://quantium.com/" target="_blank">Quantium</a></span>.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-comment-heart button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex-nofill">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <!-- <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about_me.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">I am a baby.</p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Year <br> experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Completed <br> projects</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Companies <br> worked</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/Alexa-CV.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical skills -
+                    <br> mostly acquired through work experience and strangers on the internet.</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== CODING LANGUAGES ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills_title">Coding Languages</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">SQL / BigQuery</h3>
+                                        <span class="skills__number">Proficient</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">Competent</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">MATLAB</h3>
+                                        <span class="skills__number">Competent</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__matlab"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Shell</h3>
+                                        <span class="skills__number">Advanced Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bash"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">C</h3>
+                                        <span class="skills__number">Advanced Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">HTML / CSS / Javascript</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html-css-js"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== TECHNOLOGIES ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-layer-group skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills_title">Technologies</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Excel / Google Sheets</h3>
+                                        <span class="skills__number">Proficient</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__excel"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__number">Competent</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__github"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Jinja2</h3>
+                                        <span class="skills__number">Advanced Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jinja2"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Vertex AI Pipelines</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__vertex"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__django"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Docker</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__docker"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Career Journey</h2>
+                <span class="section__subtitle">This is my professional journey -
+                    <br> I began with electrical engineering & economics and landed in data.
+                </span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex-nofill qualification__active" data-target='#work'>
+                        <i class="uil uil-laptop qualification__icon"></i>
+                        Where I've Worked
+                    </div>
+
+                    <div class="qualification__button button--flex-nofill" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Where I've Studied
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION WORK EXPERIENCE ====================-->
+                    <div class="qualification__content qualification__active" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Graduate Data Analyst</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://quantium.com/" target="_blank">
+                                            @ Quantium
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aug 2022 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================--> 
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Research Assistant</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://www.unsw.edu.au/engineering/our-schools/electrical-engineering-telecommunications/our-research/research-groups/signal-processing/signals-information-machine-intelligence-lab" target="_blank">
+                                            @ UNSW
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jul - Dec 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Student Electrical Engineer</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://www.resmed.com.au/" target="_blank">
+                                            @ ResMed
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Dec 2020 - May 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 4 ====================--> 
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Platform Engineering Vacationer</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://coe.platform.deloitte.com.au/" target="_blank">
+                                            @ Deloitte
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Nov - Dec 2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Project Analyst</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://redmarker.ai/" target="_blank">
+                                            @ RedMarker
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Nov 2018 - Mar 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+
+                    </div>    
+            
+                    <!--==================== QUALIFICATION EDUCATION ====================-->
+                    <div class="qualification__content" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Electrical Engineering</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://www.unsw.edu.au/engineering/our-schools/electrical-engineering-telecommunications" target="_blank">
+                                            @ UNSW
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================--> 
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Commerce (Business Economics)</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="https://www.unsw.edu.au/business" target="_blank">
+                                            @ UNSW
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2022
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Higher School Certificate</h3>
+                                <span class="qualification__subtitle">
+                                    <span class="highlight">
+                                        <a href="">
+                                            @ St. George Girls High School
+                                        </a>
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2011 - 2016
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Welcome to my portfolio -
+                    <br> a small and growing list of things I've made.
+                </span>
+
+                <div class="services__container container grid">
+                     <!--==================== SERVICES 1 ====================-->
+                     <div class="services__content">
+                        <div>
+                            <i class="uil uil-window services__icon"></i>
+                            <h3 class="services__title">My Personal<br>Website v1.0</h3>
+                            <span class="highlight">
+                                <span class="services__modal-tiny">HTML, CSS, Javascript</span>
+                            </span>
+                        </div>
+
+                        <div class="services__modal-body">
+                            <h4 class="services__modal-title">My Personal<br>Website v1.0</h4>
+                            <li class="services__modal-service">
+                                <p class="services__modal-subtitle">
+                                    My first time creating a proper website. I learnt alot about HTML, CSS and Javascript
+                                    through the process.
+                                    <br><br>
+                                    <span class="highlight">
+                                        <a href="#" target="_blank">See more...</a>
+                                    </span>
+                                </p>
+                            </li>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-microphone services__icon"></i>
+                            <h3 class="services__title">Automatic<br>Speech<br>Recognition</h3>
+                            <span class="highlight">
+                                <span class="services__modal-tiny">Python, Shell</span>
+                            </span>
+                        </div>
+
+                        <div class="services__modal-body">
+                            <h4 class="services__modal-title">Automatic Speech<br>Recognition</h4>
+                            <li class="services__modal-service">
+                                <p class="services__modal-subtitle">
+                                    I used the
+                                        <a href="https://huggingface.co/docs/transformers/model_doc/wav2vec2">
+                                            HuggingFace wav2vec 2.0 model
+                                        </a>to build several automatic Speech
+                                    recognition models for children, reaching state-of-the-art accuracy.
+                                    <br><br>
+                                    <span class="highlight">
+                                        <a href="https://github.com/monomest/Thesis" target="_blank">See more...</a>
+                                    </span>
+                                </p>
+                            </li>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-scenery services__icon"></i>
+                            <h3 class="services__title">Image Edge<br>Detection</h3>
+                            <span class="highlight">
+                                <span class="services__modal-tiny">C++, Batchfile</span>
+                            </span>
+                        </div>
+
+                        <div class="services__modal-body">
+                            <h4 class="services__modal-title">Image Edge<br>Detection</h4>
+                            <li class="services__modal-service">
+                                <p class="services__modal-subtitle">
+                                    Implementation of Laplacian of Gaussian filtering on 
+                                    monochrome or colour BMP images, for edge detection.
+                                    <br><br>
+                                    <span class="highlight">
+                                        <a href="https://github.com/monomest/Image-Edge-Detection" target="_blank">See more...</a>
+                                    </span>
+                                </p>
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+
+                                <span class="contact__subtitle">reneeylu29@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+
+                                <span class="contact__subtitle">Sydney - Australia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form 
+                        action="https://formspree.io/f/mvonldkn"
+                        method="POST"
+                        class="contact__form grid"
+                    >
+                    <!-- <form onsubmit="sendEmail(); reset(); return false;" class="contact__form grid"> -->
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input name="Name" type="text" id="contact-name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email</label>
+                                <input name="Email" type="email" id="email" class="contact__input" required>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Subject</label>
+                            <input name="Subject" type="text" id="contact-subject" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="Message" id="contact-message" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <button class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                            <!-- <a href="" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a> -->
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Ren&eacute;e</h1>
+                        <span class="footer__subtitle">Data Analyst</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer__link">Career</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                        <li>
+                            <a download="" href="assets\pdf\Renee-Resume-23-05-01.pdf" target="_blank" class="footer__link">
+                                <i class="uil uil-file nav__icon"></i>Resumé
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/reneeylu" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/monomest" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">Ren&eacute;e Lu, 2023</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL UP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    
+    </body>
+</html>
