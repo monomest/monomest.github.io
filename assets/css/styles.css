@@ -964,12 +964,16 @@ img{
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+  margin-right: var(--mb-0-5);
+  margin-left: var(--mb-0-5);
 }
 
 .services__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
+  margin-right: var(--mb-0-5);
+  margin-left: var(--mb-0-5);
 }
 
 .services__button{
@@ -1040,6 +1044,9 @@ img{
 
 .highlight .services__modal-tiny{
   font-size: var(--smaller-font-size);
+  margin-right: var(--mb-0-5);
+  margin-left: var(--mb-0-5);
+  float: left;
 }
 
 .services__modal-subtitle a{
@@ -1184,6 +1191,7 @@ img{
 
 .footer__subtitle{
   font-size: var(--small-font-size);
+  float: left;
 }
 
 .footer__links{
@@ -1546,7 +1554,7 @@ img{
     font-size: 2rem;
   }
   .services__content{
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 6rem 0 2rem 1.5rem;
   }
   .services__modal-content{
     width: 450px;
