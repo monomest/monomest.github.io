@@ -938,18 +938,31 @@ img{
   overflow: hidden;
 }
 
-.services__content:hover,
-.services__modal-body:hover,
-.services__content:active
-{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
-  transform: translateY(-.25rem);
-  transform: scale(1.05);
-  transition: 0.3s; 
-  cursor: pointer;
+/* Only enable hover when device allows hover */
+/* Source: https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c */
+
+@media(hover: hover) and (pointer: fine) {
+  .services__content:hover,
+  .services__modal-body:hover
+  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+    transform: translateY(-.25rem);
+    transform: scale(1.05);
+    transition: 0.3s; 
+    cursor: pointer;
+  }
+  .services__content:hover .services__modal-body{
+    background: linear-gradient(45deg, var(--hue-gradient), transparent) hsl(var(--hue-color), 69%, 61%);
+    visibility: visible;
+    right: 0;
+  }
+  
+  .services__content:hover .services__modal-subtitle .button__icon{
+    visibility: visible;
+  }
 }
 
-.services__content:hover .services__modal-body{
+/* .services__content:hover .services__modal-body{
   background: linear-gradient(45deg, var(--hue-gradient), transparent) hsl(var(--hue-color), 69%, 61%);
   visibility: visible;
   right: 0;
@@ -957,7 +970,7 @@ img{
 
 .services__content:hover .services__modal-subtitle .button__icon{
   visibility: visible;
-}
+} */
 
 .services__icon{
   display: block;
@@ -1083,11 +1096,24 @@ img{
   margin-right: var(--mb-0-25); 
 }
 /* Active Modal */
-.active-modal{
+
+/* .active-modal{
   opacity: 1;
   visibility: visible;
-}
+} */
 
+@media(hover: none){
+  .active-modal{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+    transform: translateY(-.25rem);
+    transform: scale(1.05);
+    transition: 0.3s; 
+    cursor: pointer;
+    background: linear-gradient(45deg, var(--hue-gradient), transparent) hsl(var(--hue-color), 69%, 61%);
+    visibility: visible;
+    right: 0;
+  }
+}
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
   overflow: initial;
